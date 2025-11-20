@@ -12,5 +12,7 @@ COPY . .
 # Build the binary from cmd/main.go and output as "app"
 RUN go build -o app ./cmd/main.go
 
+EXPOSE 8000
+
 # Command to run the binary
 CMD ["/app/app"]
